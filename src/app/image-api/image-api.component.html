@@ -1,0 +1,27 @@
+<h3>Searched movie Name: {{movieName}}</h3>
+<div class="grid" *ngFor="let movie of movies">
+    <article class="image image-item">
+      <header class="image__header">
+          <h1 class="movie__title">
+            {{movie.Title}}
+          </h1>
+      </header>
+      <div class="movie__image">
+        <img *ngIf="movie.Poster"
+        width="300"
+        height="300"
+        alt="movie Image"
+        src = {{movie.Poster}}/>
+      </div>
+      <div class="movie__content">
+        <h2 class="release__year">
+            Released Year: {{movie.Year}}
+        </h2>
+        <p class="movie__type">
+            Type: {{movie.Type}}
+        </p>
+    </div>
+  </article>
+  
+</div>
+

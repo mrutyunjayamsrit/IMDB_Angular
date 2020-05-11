@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit($event)">
+  <div>
+    <input #movieName type="text" name="movie"/>
+    <button (click)="onSubmit(movieName.value)">Search Movie</button>
+  </div>
+</form>
